@@ -24,3 +24,24 @@ window.addEventListener("resize", () => {
     e.style.color = "hotpink";
   })
 })
+
+window.addEventListener("keydown", () => {
+  // container.target.style.fontSize = "5rem";
+  paragraphs.forEach((e) => {
+    e.style.lineHeight = "3";
+  })
+})
+
+window.addEventListener("keyup", () => {
+  // container.target.style.fontSize = "5rem";
+  paragraphs.forEach((e) => {
+    e.style.lineHeight = "1.7";
+  })
+})
+
+const logoHeading = document.querySelector(".logo-heading");
+
+logoHeading.addEventListener("dblclick", () => {
+  logoHeading.style.fontSize = "7rem";
+})
+
