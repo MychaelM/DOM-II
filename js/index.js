@@ -11,4 +11,16 @@ images.forEach((event) => {
     e.target.style.transition = "transform 1s";
 })});
 
-console.log(images);
+// console.log(images);
+
+// const body = document.getElementsByTagName("body");
+// console.log(body);
+// const container = document.querySelector(".container");
+const paragraphs = document.querySelectorAll("p");
+
+window.addEventListener("resize", () => {
+  // container.target.style.fontSize = "5rem";
+  paragraphs.forEach((e) => {
+    e.style.color = "hotpink";
+  })
+})
