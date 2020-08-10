@@ -59,8 +59,20 @@ window.addEventListener("load", (e) => {
   alert("I have loaded the page.")
 });
 
-const button = document.querySelector("input");
-button.addEventListener("focus", (e) => {
+const input = document.querySelector("input");
+input.addEventListener("focus", (e) => {
   e.target.style.backgroundColor = "hotpink";
 })
-console.log(button);
+console.log(input);
+
+const destination = document.querySelector(".destination")
+const buttons = document.querySelectorAll(".btn");
+buttons.forEach((e) => {
+  e.addEventListener("click", (e) => {
+    e.target.style.backgroundColor = "hotpink";
+    e.stopPropagation();
+  })
+})
+destination.addEventListener("click", (e) => {
+  e.target.style.backgroundColor = "blue";
+})
