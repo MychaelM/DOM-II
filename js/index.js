@@ -84,3 +84,5 @@ navLinks.forEach((e) => {
   console.log("Links did not fire!");
   })
 })
+
+gsap.to(".logo-heading", { duration: 2, x: 200, ease: "bounce" });
