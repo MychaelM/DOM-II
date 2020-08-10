@@ -45,3 +45,22 @@ logoHeading.addEventListener("dblclick", () => {
   logoHeading.style.fontSize = "7rem";
 })
 
+window.addEventListener("wheel", () => {
+  // container.target.style.fontSize = "5rem";
+  images.forEach((e) => {
+    e.style.opacity = "0.2";
+  });
+});
+window.addEventListener("scroll", () => {
+  console.log("I have scrolled the page");
+});
+
+window.addEventListener("load", (e) => {
+  alert("I have loaded the page.")
+});
+
+const button = document.querySelector("input");
+button.addEventListener("focus", (e) => {
+  e.target.style.backgroundColor = "hotpink";
+})
+console.log(button);
