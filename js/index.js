@@ -76,3 +76,11 @@ buttons.forEach((e) => {
 destination.addEventListener("click", (e) => {
   e.target.style.backgroundColor = "blue";
 })
+
+const navLinks = document.querySelectorAll("a");
+navLinks.forEach((e) => {
+  e.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("Links did not fire!");
+  })
+})
