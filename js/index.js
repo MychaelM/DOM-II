@@ -48,6 +48,7 @@ logoHeading.addEventListener("dblclick", () => {
 window.addEventListener("wheel", () => {
   // container.target.style.fontSize = "5rem";
   images.forEach((e) => {
+    console.log("I used the wheel!!")
     e.style.opacity = "0.2";
   });
 });
